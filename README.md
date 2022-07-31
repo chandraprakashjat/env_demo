@@ -14,3 +14,16 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+//For Custom Application enviroment
+
+-Devlopment Enviroment -> flutter run / flutter run --dart-define=Env=DEV
+-Test Enviroment => flutter run --dart-define=Env=TEST
+-Staging Enviroment => flutter run --dart-define=Env=STAG
+-Production Enviroment => flutter run --dart-define=Env=PROD
+
+//ENV -> name in main()-> String.fromEnviroment('Env',defaultValue:'xxx')
+
+//GeValue :- Enviroment().buildConfig.appUrl,
+             Enviroment().buildConfig.useHttps
